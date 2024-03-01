@@ -78,6 +78,7 @@ const showDetails = (phone) => {
     showDetailsContainer.innerHTML = `
     <img class="m-auto p-4 text-center justify-center items-center" src="${phone.image}" alt="">
     <p><span class="text-[black]"> Brand :</span> ${phone.brand}</p>
+    <p><span class="text-[black]"> releaseDate: </span> ${phone.releaseDate || 'No releaseDate Available'}</p>
     <p><span class="text-[black]"> Storage :</span> ${phone.mainFeatures.storage}</p>
     <p><span class="text-[black]"> ChipSet:</span> ${phone.mainFeatures.chipSet}</p>
     <p><span class="text-[black]"> DisplaySize:</span> ${phone.mainFeatures.displaySize}</p>
@@ -87,7 +88,6 @@ const showDetails = (phone) => {
     <p><span class="text-[black]"> NFC: </span> ${phone.others?.NFC || 'No NFC Available'}</p>
     <p><span class="text-[black]"> Radio: </span> ${phone.others?.Radio || 'No Radio Available'}</p>
     <p><span class="text-[black]"> USB: </span> ${phone.others?.USB || 'No USB Available'}</p>
-    <p><span class="text-[black]"> releaseDate: </span> ${phone.others?.releaseDate || 'No releaseDate Available'}</p>
     <p><span class="text-[black]"> WLAN: </span> ${phone.others?.WLAN || 'No WLAN Available'}</p>
     
     `;
